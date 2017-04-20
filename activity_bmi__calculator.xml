@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_bmi__calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kashishgoyal.utilitytools.BMI_Calculator">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/uimage"
+        android:id="@+id/imageView"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:text="@string/height_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/h"
+        android:textSize="20sp"
+        android:layout_below="@+id/heading" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/height"
+        android:layout_alignBaseline="@+id/h"
+        android:layout_alignBottom="@+id/h"
+        android:layout_toRightOf="@+id/h"
+        android:layout_toEndOf="@+id/h"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:text="@string/weight_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="39dp"
+        android:id="@+id/w"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_alignTop="@+id/w"
+        android:layout_alignLeft="@+id/height"
+        android:layout_alignStart="@+id/height"
+        android:id="@+id/weight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_alignStart="@+id/weight"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="56dp"
+        android:id="@+id/result"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/opi"
+        android:layout_below="@+id/result"
+        android:layout_alignLeft="@+id/result"
+        android:layout_alignStart="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:text="@string/main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="@string/bmi_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/h"
+        android:layout_toEndOf="@+id/h"
+        android:layout_below="@+id/imageView" />
+
+    <Button
+        android:text="@string/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/bmi"
+        android:layout_below="@+id/weight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

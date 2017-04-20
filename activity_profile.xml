@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_profile"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        tools:context="com.example.kashishgoyal.utilitytools.ProfileActivity"
+        android:weightSum="1"
+    tools:style="@style/Animation.Design.BottomSheetDialog"
+    style="@style/Base.Animation.AppCompat.DropDownUp">
+
+    <ImageView
+            android:layout_width="wrap_content"
+        app:srcCompat="@drawable/uimage"
+            android:id="@+id/imageView"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,InefficientWeight"
+            android:layout_marginTop="10dp"
+        android:layout_height="90dp"
+        android:layout_weight="0.52" />
+
+    <TextView
+        android:layout_margin="10dp"
+
+        android:text="@string/utilitytools1"
+        android:id="@+id/email"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+    <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="171dp"
+        app:srcCompat="@drawable/bm14"
+            android:id="@+id/bmi"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,RtlHardcoded"
+
+        android:layout_height="74dp" />
+
+        <ImageView
+            android:layout_width="162dp"
+            app:srcCompat="@drawable/barcode"
+            android:id="@+id/qr"
+            tools:ignore="ContentDescription"
+
+            android:layout_height="70dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="171dp"
+            app:srcCompat="@drawable/uc"
+            android:id="@+id/uc"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,RtlHardcoded"
+
+            android:layout_height="72dp" />
+
+        <ImageView
+            android:layout_width="162dp"
+            app:srcCompat="@drawable/cc"
+            android:id="@+id/cc"
+            tools:ignore="ContentDescription"
+
+            android:layout_height="78dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="171dp"
+            app:srcCompat="@drawable/hrm"
+            android:id="@+id/hrm"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,RtlHardcoded"
+
+            android:layout_height="85dp" />
+
+        <ImageView
+            android:layout_width="162dp"
+            app:srcCompat="@drawable/cc4"
+            android:id="@+id/torch"
+            tools:ignore="ContentDescription,InefficientWeight"
+            android:layout_marginTop="5dp"
+            android:layout_height="62dp"
+            android:layout_weight="0.78" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="171dp"
+            app:srcCompat="@drawable/pp1"
+            android:id="@+id/compass"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,RtlHardcoded"
+
+            android:layout_height="78dp" />
+
+        <ImageView
+            android:layout_width="162dp"
+            app:srcCompat="@drawable/logout"
+            android:id="@+id/logout"
+            tools:ignore="ContentDescription,InefficientWeight"
+
+            android:layout_height="match_parent"
+            android:layout_weight="0.78" />
+    </LinearLayout>
+</LinearLayout>
+
+
